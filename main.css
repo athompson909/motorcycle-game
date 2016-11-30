@@ -1,0 +1,146 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #414141;
+}
+
+#header {
+  height: 120px;
+}
+
+#viewport {
+  position: relative;
+  z-index: 5;
+  width: 740px;
+  height: 480px;
+  margin: 0 auto;
+  background: linear-gradient(#87cefa, #fcfefd);
+  box-shadow: inset 0px 0px 20px -1px rgba(65,65,65,1);
+  border: 10px solid #f5650d;
+  clear: both;
+}
+
+#ground {
+  position: absolute;
+  bottom: 0;
+  width: 20000px;
+  z-index = 4;
+}
+
+.cover-orange,
+  .cover-grey {
+  float: left;
+  height: 100%;
+}
+
+.cover-orange {
+  background-color: #f5650d;
+  width: 10px;
+}
+
+.cover-grey {
+  background-color: #414141;
+  width: 990px;
+}
+
+#left-cover, #right-cover {
+  position: absolute;
+  height: 36px;
+  width: 1000px;
+  bottom: 0;
+}
+
+#left-cover {
+  left: -1000px;
+  background-color: #000;
+}
+
+#right-cover {
+  right: -1000px;
+  background-color: #000;
+}
+
+.pixel-safe-chunk {
+  float: left;
+  height: 36px;
+  width: 1px;
+  background: linear-gradient(#005500, #00a200);
+
+}
+
+.pixel-lava-chunk {
+  margin-top: 6px;
+  float: left;
+  width: 1px;
+  height: 30px;
+  background: linear-gradient(red, #000000);
+
+}
+
+.long-safe-chunk,
+  .short-safe-chunk,
+  .tiny-safe-chunk {
+    float: left;
+    height: 36px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    background: linear-gradient(#005500, #00a200);
+}
+
+
+.long-safe-chunk {
+  width: 500px;
+}
+
+.short-safe-chunk {
+  width: 250px;
+}
+
+.tiny-safe-chunk {
+  width: 175px;
+}
+
+.long-lava-chunk,
+  .short-lava-chunk {
+    margin-top: 6px;
+    float: left;
+    height: 30px;
+    background: linear-gradient(red, #000000);
+}
+
+.long-lava-chunk {
+  width: 200px;
+}
+
+.short-lava-chunk {
+  width: 100px;
+}
+
+#guy {
+
+  position: absolute;
+  bottom: 36px;
+  left: 120px;
+}
+
+#guy img {
+  width: 80px;
+}
+
+#guy #explosion img {
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  width: 100px;
+}
+
+#addition-box {
+  position: absolute;
+  top: 120px;
+  left: 180px;
+}
